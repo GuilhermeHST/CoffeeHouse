@@ -1,0 +1,51 @@
+import 'package:flutter/material.dart';
+import '/infoProdutos.dart';
+
+void main() => runApp(MaterialApp());
+
+class Catalogo extends StatefulWidget {
+  const Catalogo({Key? key}) : super(key: key);
+
+  @override
+  State<Catalogo> createState() => _CatalogoState();
+}
+
+class _CatalogoState extends State<Catalogo> {
+  InfoCatalogo produto1 = InfoCatalogo(
+      imagem:
+          'https://img.freepik.com/fotos-gratis/xicara-de-cafe-com-espuma-cara-de-sorriso-na-mesa-isolada_1303-18307.jpg?w=2000',
+      titulo: 'Café',
+      descricao: 'produto feito a base de cafe moido e torrado da marca....',
+      quantidade: '80ml',
+      valor: "7.99");
+
+  InfoCatalogo produto2 = InfoCatalogo(
+      imagem:
+          'https://i.pinimg.com/236x/8e/ce/4f/8ece4f3c2095e75ac23723312870ea86.jpg',
+      titulo: 'Milkshake de Oreo',
+      descricao: 'feito com leite,oreo,chocolate...',
+      quantidade: '200ml',
+      valor: "17.99");
+
+  InfoCatalogo produto3 = InfoCatalogo(
+      imagem:
+          'https://i.pinimg.com/236x/8f/79/68/8f796859a555640ee0db35a16cf061c4.jpg',
+      titulo: 'Chocolate Quente',
+      descricao: 'feito com leite,chocolate...',
+      quantidade: '180ml',
+      valor: "14.99");
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      backgroundColor: Color(0xFFF8EF9),
+      body: Container(
+        child: Column(
+          children: [
+            Container(),
+          ],
+        ),
+      ),
+    );
+  }
+}

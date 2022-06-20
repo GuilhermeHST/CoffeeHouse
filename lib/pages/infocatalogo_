@@ -1,0 +1,15 @@
+class InfoCatalogo {
+  final String imagem;
+  final String titulo;
+  final String descricao;
+  final String quantidade;
+  final String valor;
+
+  InfoCatalogo({
+    required this.imagem,
+    required this.titulo,
+    required this.descricao,
+    required this.quantidade,
+    required this.valor,
+  });
+}

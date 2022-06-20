@@ -1,0 +1,39 @@
+import 'package:cafe_polly/infoProdutos.dart';
+import 'package:flutter/material.dart';
+
+class DetalhesCatalogo extends StatefulWidget {
+  final InfoCatalogo infoProdutos;
+
+  DetalhesCatalogo(this.infoProdutos);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      body: buildBody(),
+    );
+  }
+
+  buildBody() {
+    return ListView(
+      children: [
+        Image.network(infoProdutos.imagem),
+        Padding(
+          padding: const EdgeInsets.all(16.0),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
+            children: [
+              Text(
+                infoProdutos.titulo,
+              ),
+              const SizedBox(height: 8),
+              // buildText(text:infoProdutos.titulo, fontSize: 21, isBold: true),
+              const SizedBox(height: 8),
+              // buildText(text: infoProdutos.valor),
+              const SizedBox(height: 8),
+            ],
+          ),
+        )
+      ],
+    );
+  }
+}
