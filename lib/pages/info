@@ -1,0 +1,34 @@
+import 'package:flutter/material.dart';
+
+class InfoScreen extends StatefulWidget {
+  const InfoScreen({Key? key}) : super(key: key);
+
+  @override
+  _InfoScreenState createState() => _InfoScreenState();
+}
+
+class _InfoScreenState extends State<InfoScreen> {
+  @override
+  Widget build(context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text("AppBar"),
+      ),
+      body: Container(
+        color: Colors.brown[100],
+    
+        child: Column(
+          // ignore: prefer_const_literals_to_create_immutables
+          children: [
+            const ListTile(
+              leading: Icon(Icons.location_on_rounded),
+              title: Text('COFFEE HOUSE'),
+              subtitle: Text('R. São José, 95'),
+              trailing: Icon(Icons.food_bank),
+            ),
+          ],
+        ),
+      ),
+    );
+  }
+}
